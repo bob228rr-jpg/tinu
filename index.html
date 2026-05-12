@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Freaky Tongue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <style>
       * {
         box-sizing: border-box;
@@ -22,20 +25,30 @@
         place-items: center;
         background: #fff;
         color: #111;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Reenie Beanie", "Bradley Hand", "Comic Sans MS", cursive;
       }
 
+      .ticker,
       .top-links {
         position: fixed;
         top: 24px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        transform: rotate(-1deg);
+        text-shadow: 0.4px 0.3px 0 #111;
+      }
+
+      .ticker {
+        left: 28px;
+      }
+
+      .top-links {
         right: 28px;
         display: flex;
         align-items: center;
         gap: 18px;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0;
-        text-transform: uppercase;
       }
 
       .top-links a,
@@ -57,11 +70,19 @@
       }
 
       @media (max-width: 520px) {
+        .ticker,
         .top-links {
           top: 18px;
+          font-size: 12px;
+        }
+
+        .ticker {
+          left: 18px;
+        }
+
+        .top-links {
           right: 18px;
           gap: 12px;
-          font-size: 12px;
         }
 
         .tongue {
@@ -72,6 +93,8 @@
     </style>
   </head>
   <body>
+    <div class="ticker">$tongue</div>
+
     <nav class="top-links" aria-label="Social links">
       <a href="https://x.com/freaky_tongue_" target="_blank" rel="noreferrer">TWT</a>
       <span>CONTRACT SOON</span>
