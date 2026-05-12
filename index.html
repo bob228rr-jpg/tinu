@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freaky Tongue</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #fff;
+        color: #111;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .top-links {
+        position: fixed;
+        top: 24px;
+        right: 28px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .top-links a,
+      .top-links span {
+        color: #111;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .top-links a:hover {
+        text-decoration: underline;
+      }
+
+      .tongue {
+        width: min(62vw, 560px);
+        min-width: 320px;
+        height: auto;
+        image-rendering: auto;
+      }
+
+      @media (max-width: 520px) {
+        .top-links {
+          top: 18px;
+          right: 18px;
+          gap: 12px;
+          font-size: 12px;
+        }
+
+        .tongue {
+          width: min(72vw, 360px);
+          min-width: 240px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-links" aria-label="Social links">
+      <a href="https://x.com/freaky_tongue_" target="_blank" rel="noreferrer">TWT</a>
+      <span>CONTRACT SOON</span>
+    </nav>
+
+    <main>
+      <img class="tongue" src="./freaky-tongue-emote.gif" alt="Freaky Tongue">
+    </main>
+  </body>
+</html>
